@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="پەرتووکخانا پەیمانگەها میتان " />
+  <title>پەرتووکخانە </title>
+  <link href="style2.css" rel="stylesheet" />
+  <link rel="icon" href="imgs/logobang.png" type="image/png" />
+</head>
+
+<body>
+
+  <!-- Main Header -->
+  <header role="banner">
+    <h1>📚 پەرتووکخانا پەیمانگەها میتان</h1>
+    
+    <!-- Interactive Button with Animation -->
+    <button 
+      id="startBtn" 
+      type="button" 
+      aria-label="Start - دەستپێک"
+      class="start-button"
+    >
+      <span class="button-text">دەستپێک</span> </button>
+
+
+  </header>
+
+  <!-- Department Filter Navigation -->
+  <nav aria-label="Department Filter">
+    <div class="filter-group">
+      <button class="filter-btn active" data-dept="all">
+        ھەمی پەرتووک
+      </button>
+      <button class="filter-btn" data-dept="computer-it-tech">
+        پشکا کومپیوتەری
+      </button>
+      <button class="filter-btn" data-dept="Administration">
+        پشکا کارگێری
+      </button>
+      <button class="filter-btn" data-dept="Accounting">
+        پشکا ژمێریاری
+      </button>
+    </div>
+  </nav>
+
+  <!-- Stage/Level Filter Navigation -->
+  <nav aria-label="Stage Filter">
+    <div class="filter-group">
+      <button class="stage-btn active" data-stage="all">
+        ھەمی قوناغ
+      </button>
+      <button class="stage-btn" data-stage="1">قوناغا 1</button>
+      <button class="stage-btn" data-stage="2">قوناغا 2</button>
+      <button class="stage-btn" data-stage="3">قوناغا 3</button>
+      <button class="stage-btn" data-stage="4">قوناغا 4</button>
+      <button class="stage-btn" data-stage="5">قوناغا 5</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="grid" id="bookGrid" role="region" aria-label="Books Display">
+      <!-- Books will be populated here by JavaScript -->
+    </div>
+  </main>
+
+  <!-- JavaScript Data (Moved to external file recommended) -->
+  <script src="books-data.js"></script>
+  <script src="book.js"></script>
+</body>
+</html>
