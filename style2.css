@@ -3,6 +3,7 @@ body {
       font-family: 'Poppins', sans-serif;
       background-color: #f2f6fc;
       color: #222;
+      text-align: center;
     }
 
     header {
@@ -12,16 +13,18 @@ body {
       text-align: center;
       font-size: 1.8em;
       font-weight: 600;
+      margin-bottom: 10px;
     }
 
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #fcfcfc;
+      box-shadow: 0 2px 6px rgb(2 83 205 / 69%);
       padding: 10px 0;
       gap: 10px;
+      margin-top: 10px;
     }
 
     nav button {
@@ -103,8 +106,13 @@ body {
 
     .buttons {
       display: flex;
-      justify-content: space-between;
-      padding: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgb(30 36 46 / 88%);
+    border: 2px solid rgb(64 70 248);
+    border-radius: 0.5em;
+    font: 1.2em sans-serif;
+    align-items: center;
+    justify-content: center;
     }
 
     .btn {
